@@ -33,14 +33,16 @@
         }
     ],
     "require": {
+        "php": ">=5.5.9",
         "composer/composer": "~1.0",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/admin_toolbar": "^1.19",
         "drupal/console": "^1.0.1",
         "drupal/core": "~8.0",
+        "drupal/devel": "^1.0",
         "drush/drush": "~8.0",
-        "php": ">=5.5.9",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
@@ -50,7 +52,6 @@
         "behat/mink-selenium2-driver": "dev-master#721cbbaf37f71434f6acb604dc3a17a6a9be0c4c",
         "drupal/coder": "~8.2.7",
         "drupal/config_update": "1.*@dev",
-        "drupal/devel": "1.*@dev",
         "drupal/drupal-extension": "~3.0",
         "drupal/phingdrushtask": "dev-7.x-2.x",
         "jcalderonzumba/gastonjs": "^1.1@dev",
