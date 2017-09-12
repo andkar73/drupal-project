@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains one_two.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function one_two_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the one_two module.
+    case 'help.page.one_two':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function one_two_theme() {
+  return [
+    'one_two' => [
+      'render element' => 'children',
+    ],
+  ];
+}
